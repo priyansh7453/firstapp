@@ -1,0 +1,9 @@
+.main{
+    background-color:rgb(224, 18, 145);
+    align-items:center
+}
+
+#one{
+    border: radius 4px;
+    margin :1rem 0;
+}

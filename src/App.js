@@ -1,10 +1,10 @@
-import logo from "./logo.svg";
+import Expenseitem from "./component/Expenseitem";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <h1>hello my name is ankush</h1>
+      <Expenseitem />
     </div>
   );
 }
