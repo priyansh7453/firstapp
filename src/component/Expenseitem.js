@@ -1,19 +1,15 @@
-import "./Expenseitem.css";
-function Expenseitem() {
-  const expenseData = new Date(2021, 2, 28);
-  const expenseTitle = "food";
-  const expenseAmount = 256;
+import "./ExpenseItem.css";
+
+function ExpenseItem(props) {
   return (
-    <div className="main">
-      <h1>Expense Items</h1>
-
-      <div id="one">Food Rs 10</div>
-      <div d="one">Petrol Rs 100</div>
-
-      <div d="one">Movies Rs 200</div>
-
-      <h5> spent money {Math.random()}</h5>
+    <div className="expense-item">
+      <div>{props.date.toISOString()}</div>
+      <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
+      </div>
     </div>
   );
 }
-export default Expenseitem;
+
+export default ExpenseItem;
