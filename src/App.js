@@ -1,7 +1,7 @@
-import ExpenseItem from "./component/ExpenseItem";
+import ExpenseItem from "./component/Expenses/ExpenseItem";
 import "./App.css";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div>
-      <h2>Let's get started!</h2>
+      {/* <h2>Let's get started!</h2> */}
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -49,6 +49,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
 export default App;
