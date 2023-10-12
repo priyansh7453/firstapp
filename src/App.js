@@ -1,4 +1,5 @@
 import ExpenseItem from "./component/Expenses/ExpenseItem";
+import NewExpense from "./component/ExpenseForm/NewExpense";
 import "./App.css";
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
   return (
     <div>
       {/* <h2>Let's get started!</h2> */}
+      <NewExpense />
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
