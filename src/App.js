@@ -1,6 +1,6 @@
 import ExpenseItem from "./component/Expenses/ExpenseItem";
 import NewExpense from "./component/ExpenseForm/NewExpense";
-import { useState } from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 const DUMMY_EXPENSES = [
